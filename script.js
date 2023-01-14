@@ -1,18 +1,4 @@
-// Quiz
-//     questions
-//     score
-//     questionIndex
 
-// isEnded
-// getQuestionByIndex
-// checkOptionWithAnswer
-
-// Question
-//     questionText
-//     answer
-//     choices
-
-// isCorrectAnswer
 
 function Quiz(questions){
     this.questions = questions;
@@ -45,21 +31,7 @@ Question.prototype.isCorrectAnswer = function(userAnswer){
     return this.answer===userAnswer;
 }
 
-// function loadQuestions(){
-//     ...if quiz.isEnded... 
-//             showScores()
-//     else
-//         ...
-//         //where to put the question
-//             question = quiz.getQuestionByIndex()
-//             document.getElementId("question").innerText= question.questionText;
-        
-//             questionChoices= question.choices;
-//             for each of the questionChoice
-//                  document.getElementId("choice"+i).innerText= questionChoices[i];
-//                  handleOptionButton("btn"+i,questionChoices[i])
-//             showProgress()
-// }
+
 
 function loadQuestions() {
     if(quiz.isEnded()) {
@@ -116,5 +88,4 @@ let quiz = new Quiz(questions);
 
 loadQuestions();
 
-// question1 = new Question("who is father of computer",["1","2"],"1")
-// question1.isCorrectAnswer("2");
+
